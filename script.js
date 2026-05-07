@@ -24,7 +24,7 @@ function displayProducts(data) {
             <p class="tag">${category}</p>
             <img src=${image} class="product-image">
             <h2 class="title">${title}</h2>
-            <p class="desc">${description.slice(0,11)}</p>
+            <p class="desc">${description.split(" ").slice(0,11).join(" ")}...</p>
             <p class="price">$${price}</p>
             <button class="buy-btn">Add to Cart</button>
         </div>`;
